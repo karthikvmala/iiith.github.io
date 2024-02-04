@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title> My own website</title>
+    <link rel="stylesheet" href="iss.css">
+    <script src="https://kit.fontawesome.com/3b3d8861cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="blog">
+        <h1> Quotes and My Interpretation</h1>
+        <hr style="width: 70%; height: 10px; margin: 0 auto; background-color: #333; border: none;">
+        <p>
+            "The only way to do great work is to love what you do." - Steve Jobs
+            <br>
+            Interpretation: Steve Jobs, the co-founder of Apple Inc., emphasized the importance of passion in achieving greatness. 
+            This quote suggests that genuine love for one's work is a driving force behind remarkable accomplishments. Many other quotes a similar idea of the importatance of
+            passion. It allows you to "embrace the struggle" more, and have fun regardless of the outcome. This mentality is healthy.
+            <br>
+            "The only thing we have to fear is fear itself." - Franklin D. Roosevelt
+            <br>
+            Interpretation: This quote is from Franklin D. Roosevelt during the Great Depression. The situation was very grim. This quote motivated many people. It conveys the
+            idea that fear, more than any external challenge, is the primary obstacle to progress and success.
+        </p>
+        <hr>
+    </div>
+    <div class="comments">
+        <h2>Comments</h2>
+        <div class="comment">
+            <div class="head">
+                <h3>Mohan:</h3>
+            </div>
+            <div class="content">
+                <p>Well written aritcle</p>
+            </div>
+            <br>
+            <div class="head">
+                <h3>Santosh:</h3>
+            </div>
+            <div class="content">
+                <p>This is very inspiring</p>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <button id="like" onclick="toggleLike()">Click here to like the post</button>
+    </div>
+    
+    <script>
+        function toggleLike() {
+            var button = document.getElementById('like');
+            if (button.innerHTML === 'Click here to like the post') {
+                button.innerHTML = 'Liked the post';
+                button.classList.add('liked');
+            } else {
+                button.innerHTML = 'Click here to like the post';
+                button.classList.remove('liked');
+            }
+        }
+    </script>
+
+</body>
+</html>
